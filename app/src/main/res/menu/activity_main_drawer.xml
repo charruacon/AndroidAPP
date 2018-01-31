@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_schedule"
+            android:title="Agenda" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_action_map"
+            android:title="Mapa" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Informacion" />
+        <item
+            android:id="@+id/nav_vendors"
+            android:icon="@drawable/ic_people"
+            android:title="Patrocinadores" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ajustes" />
+    </group>
+
+
+
+</menu>
