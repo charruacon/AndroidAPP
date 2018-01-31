@@ -158,11 +158,17 @@ public class MainActivity extends AppCompatActivity
             rl.setVisibility(View.GONE);
             Schedue.setVisibility(View.VISIBLE);
         } else if (id == R.id.nav_vendors) {
+            Schedue.setVisibility(View.GONE);
+            rl.setVisibility(View.GONE);
 
         } else if (id == R.id.nav_settings) {
+            Schedue.setVisibility(View.GONE);
+            rl.setVisibility(View.GONE);
 
 
         } else if (id == R.id.nav_info) {
+            Schedue.setVisibility(View.GONE);
+            rl.setVisibility(View.GONE);
 
 
 
