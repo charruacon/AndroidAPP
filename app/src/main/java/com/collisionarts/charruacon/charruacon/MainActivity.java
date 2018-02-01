@@ -1,5 +1,6 @@
 package com.collisionarts.charruacon.charruacon;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -38,9 +40,6 @@ public class MainActivity extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
-            //hide layouts
-        RelativeLayout rl = (RelativeLayout) findViewById(R.id.map_layput);
-        rl.setVisibility(View.GONE);
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -51,6 +50,11 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //hide layouts
+        RelativeLayout rl = (RelativeLayout) findViewById(R.id.map_layput);
+        rl.setVisibility(View.GONE);
+
 
         //listview
         ArrayList<Talk> talks = new ArrayList<Talk>();
